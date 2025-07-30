@@ -2,7 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-blue.svg)](https://www.typescriptlang.org/)
-[![Node Version](https://img.shields.io/node/v/schedulewise)](https://nodejs.org/)
+[![npm version](https://img.shields.io/npm/v/@kyo-services/schedulewise.svg)](https://www.npmjs.com/package/@kyo-services/schedulewise)
+[![Node Version](https://img.shields.io/node/v/@kyo-services/schedulewise)](https://nodejs.org/)
 [![Browser Support](https://img.shields.io/badge/browser-Chrome%20%7C%20Firefox%20%7C%20Safari%20%7C%20Edge-lightgrey)](https://browsersl.ist)
 
 A smart and efficient task scheduler for managing periodic jobs with precision timing and intelligent scheduling in both browser and Node.js environments. Built with modern TypeScript features and following best practices for reliable task scheduling.
