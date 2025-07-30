@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/kyo-services/schedulewise/compare/v2.0.0...v2.0.1) (2025-07-30)
+
+
+### Bug Fixes
+
+* **build:** resolve module resolution issues for esm and commonjs ([d44e25e](https://github.com/kyo-services/schedulewise/commit/d44e25eb0045e8f638a6a664da4a0203f44529e8))
+
 ## [2.0.0](https://github.com/kyo-services/schedulewise/compare/v1.0.0...v2.0.0) (2025-07-30)
 
 
