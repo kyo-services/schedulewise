@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/kyo-services/schedulewise/compare/v1.0.0...v2.0.0) (2025-07-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* change main file name
+
+### Bug Fixes
+
+* change main file name ([15d3f01](https://github.com/kyo-services/schedulewise/commit/15d3f01265e03f8fdaefa95bc97800062356247c))
+* scheduler start method ([ddd1f71](https://github.com/kyo-services/schedulewise/commit/ddd1f716e1d28285b30b907d2b0dfdd0d4d7c129))
+
 ## 1.0.0 (2025-07-30)
 
 
