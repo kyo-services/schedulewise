@@ -103,9 +103,8 @@ export class TaskScheduler {
         this.currentTimestamp = new Date();
         
         for (const task of this.scheduledTasks.values()) {
-            const elapsedTime = task.getInterval(); // Bir interval süresi geçmiş varsayalım
-            const shouldRun = task.shouldExecute(elapsedTime) && 
-                            task.lastExecutionTime.getTime() <= previousTimestamp.getTime();
+            const elapsedTime = task.getInterval();
+            const shouldRun = task.shouldExecute(elapsedTime) && task.lastExecutionTime.getTime() <= previousTimestamp.getTime();
 
             if (!shouldRun) continue;
 
@@ -124,7 +123,17 @@ export class TaskScheduler {
         if (this.schedulerInterval) clearInterval(this.schedulerInterval);
         
         this.schedulerInterval = setInterval(() => {
-            this.processTasksNow();
+			this.currentTimestamp = new Date();
+			
+			for (const task of this.scheduledTasks.values()) {
+				const elapsedTime = this.currentTimestamp.getTime() - task.lastExecutionTime.getTime();
+				const shouldRun = task.shouldExecute(elapsedTime);
+
+				if (!shouldRun) continue;
+
+				task.execute(this.currentTimestamp);
+				if (task.shouldRemove()) this.removeTask(task.id);
+			}
         }, 100);
     }
 }
