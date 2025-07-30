@@ -1,4 +1,4 @@
-import { TaskScheduler } from './TaskScheduler';
-export { TaskCallback, TaskOptions } from './types';
+import { TaskScheduler } from './TaskScheduler.js';
+export { TaskCallback, TaskOptions } from './types.js';
 
 export default TaskScheduler.getInstance();

@@ -1,5 +1,5 @@
-import { TaskCallback } from './types';
-import { TaskScheduler } from './TaskScheduler';
+import { TaskCallback } from './types.js';
+import { TaskScheduler } from './TaskScheduler.js';
 
 /**
  * Represents a scheduled task in the system

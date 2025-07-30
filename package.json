@@ -6,8 +6,31 @@
 		"node": ">=18.0.0"
 	},
 	"description": "A smart and efficient task scheduler for managing periodic jobs with precision timing and intelligent scheduling in both browser and Node.js environments",
-	"main": "dist/main.js",
-	"types": "dist/main.d.ts",
+	"main": "./dist/main.js",
+	"module": "./dist/main.js",
+	"types": "./dist/main.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/main.js",
+			"require": "./dist/main.js",
+			"types": "./dist/main.d.ts"
+		},
+		"./TaskScheduler": {
+			"import": "./dist/TaskScheduler.js",
+			"require": "./dist/TaskScheduler.js",
+			"types": "./dist/TaskScheduler.d.ts"
+		},
+		"./Task": {
+			"import": "./dist/Task.js",
+			"require": "./dist/Task.js",
+			"types": "./dist/Task.d.ts"
+		},
+		"./types": {
+			"import": "./dist/types.js",
+			"require": "./dist/types.js",
+			"types": "./dist/types.d.ts"
+		}
+	},
 	"scripts": {
 		"build": "tsc --project tsconfig.json",
 		"test": "jest --config jest.config.cjs",

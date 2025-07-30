@@ -1,5 +1,5 @@
-import { Task } from './Task';
-import { TaskCallback, TaskOptions } from './types';
+import { Task } from './Task.js';
+import { TaskCallback, TaskOptions } from './types.js';
 
 /**
  * A singleton class that manages scheduled tasks in the system
