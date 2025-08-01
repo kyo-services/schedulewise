@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/kyo-services/schedulewise/compare/v2.0.2...v2.1.0) (2025-08-01)
+
+
+### Features
+
+* **scheduler:** add pause/resume functionality and simplified once method ([43d22c4](https://github.com/kyo-services/schedulewise/commit/43d22c4a6980d3064eba8136027012ff6f54a52e))
+
 ## [2.0.2](https://github.com/kyo-services/schedulewise/compare/v2.0.1...v2.0.2) (2025-08-01)
 
 
