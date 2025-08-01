@@ -20,8 +20,21 @@ A smart and efficient task scheduler for managing periodic jobs with precision t
 
 ## 📦 Installation
 
+You can install ScheduleWise using your preferred package manager:
+
+Using npm:
 ```bash
 npm install @kyo-services/schedulewise
+```
+
+Using yarn:
+```bash
+yarn add @kyo-services/schedulewise
+```
+
+Using pnpm:
+```bash
+pnpm add @kyo-services/schedulewise
 ```
 
 ## 🔧 Usage
