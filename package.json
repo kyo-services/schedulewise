@@ -79,7 +79,7 @@
 	"bugs": {
 		"url": "https://github.com/kyo-services/schedulewise/issues"
 	},
-	"homepage": "https://github.com/kyo-services/schedulewise#readme",
+	"homepage": "https://kyo.services/docs/schedulewise",
 	"lint-staged": {
 		"*.ts": [
 			"eslint --fix",
