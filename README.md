@@ -139,6 +139,38 @@ interface TaskOptions {
 | `removeTask(identifier)` | Removes a specific task |
 | `clearAllTasks()` | Removes all tasks |
 | `getAllTasks()` | Gets all scheduled tasks |
+| `pause()` | Pauses all task executions |
+| `resume()` | Resumes all task executions |
+| `isPaused()` | Checks if scheduler is paused |
+| `once(callback, options)` | Creates a one-time task with simplified API |
+
+### Scheduler Control
+
+```typescript
+// Pause all task executions
+sw.pause();
+
+// Check if scheduler is paused
+console.log('Scheduler paused:', sw.isPaused()); // true
+
+// Resume all task executions
+sw.resume();
+```
+
+### One-Time Task (Simplified API)
+
+```typescript
+// Using the simplified 'once' method
+sw.once(
+  () => {
+    console.log('This is a one-time task');
+  },
+  {
+    interval: 5000, // Execute after 5 seconds
+    name: 'simpleOneTimeTask' // Optional name
+  }
+);
+```
 
 ## 🧪 Testing
 
