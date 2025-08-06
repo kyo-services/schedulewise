@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/kyo-services/schedulewise/compare/v2.2.0...v2.2.1) (2025-08-06)
+
+
+### Bug Fixes
+
+* **package:** homepage url ([4c4bde8](https://github.com/kyo-services/schedulewise/commit/4c4bde8954695255a84d5b61738bbc29d3e37497))
+
 ## [2.2.0](https://github.com/kyo-services/schedulewise/compare/v2.1.0...v2.2.0) (2025-08-06)
 
 
