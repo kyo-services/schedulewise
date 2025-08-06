@@ -10,6 +10,7 @@ export class TaskScheduler {
 	private currentTimestamp: Date;
 	private scheduledTasks: Map<number | string, Task> = new Map();
 	private schedulerInterval: ReturnType<typeof setInterval> | null = null;
+	private processorInterval: number = 100;
 
 	private constructor() {
 		this.currentTimestamp = new Date();
@@ -157,6 +158,18 @@ export class TaskScheduler {
 	}
 
 	/**
+	 * Changes the processor interval
+	 * @param {number} newInterval - The new interval in milliseconds
+	 */
+	public changeProcessorInterval(newInterval: number): void {
+		if (newInterval <= 0) throw new Error('Interval must be greater than 0');
+
+		this.processorInterval = newInterval;
+
+		if (this.schedulerInterval !== null) this.startTaskProcessor();
+	}
+
+	/**
 	 * Starts the task processor that executes scheduled tasks
 	 * @private
 	 */
@@ -175,6 +188,6 @@ export class TaskScheduler {
 				task.execute(this.currentTimestamp);
 				if (task.shouldRemove()) this.removeTask(task.id);
 			}
-		}, 100);
+		}, this.processorInterval);
 	}
 }

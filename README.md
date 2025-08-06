@@ -143,6 +143,7 @@ interface TaskOptions {
 | `resume()` | Resumes all task executions |
 | `isPaused()` | Checks if scheduler is paused |
 | `once(callback, options)` | Creates a one-time task with simplified API |
+| `changeProcessorInterval(newInterval)` | Changes the scheduler's processor interval |
 
 ### Scheduler Control
 
@@ -155,6 +156,9 @@ console.log('Scheduler paused:', sw.isPaused()); // true
 
 // Resume all task executions
 sw.resume();
+
+// Adjust processor interval (default: 100ms)
+sw.changeProcessorInterval(500);
 ```
 
 ### One-Time Task (Simplified API)
