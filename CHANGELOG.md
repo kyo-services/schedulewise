@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/kyo-services/schedulewise/compare/v2.1.0...v2.2.0) (2025-08-06)
+
+
+### Features
+
+* **scheduler:** add processor interval configuration ([a64494d](https://github.com/kyo-services/schedulewise/commit/a64494d335c3a6920937b84d250f3b5fbe3cf6a2))
+
 ## [2.1.0](https://github.com/kyo-services/schedulewise/compare/v2.0.2...v2.1.0) (2025-08-01)
 
 
